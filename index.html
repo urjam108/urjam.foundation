@@ -1,1 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>URJAM Foundation | Global Impact</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Noto Sans Devanagari',sans-serif;
+color:#fff;
+background:#000;
+overflow-x:hidden;
+}
+
+/* BACKGROUND SLIDER */
+.bg-slider{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:-3;
+background-size:cover;
+background-position:center;
+transition:1.2s ease-in-out;
+filter:brightness(0.55);
+}
+
+/* OVERLAY */
+body::before{
+content:"";
+position:fixed;
+inset:0;
+z-index:-2;
+background:
+linear-gradient(
+to bottom,
+rgba(0,0,0,0.2),
+rgba(0,0,0,0.55)
+);
+}
+
+/* HEADER */
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:16px;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(12px);
+z-index:999;
+}
+
+nav{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+font-weight:600;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:60px;
+font-weight:800;
+letter-spacing:2px;
+text-shadow:0 0 25px rgba(0,255,180,.4);
+}
+
+.hero .sanskrit{
+font-size:38px;
+font-weight:800;
+margin-top:15px;
+white-space:nowrap;
+}
+
+.hero p{
+font-size:20px;
+margin-top:10px;
+}
+
+.hero-btn{
+margin-top:25px;
+padding:14px 30px;
+border-radius:10px;
+text-decoration:none;
+font-weight:bold;
+background:linear-gradient(135deg,#ffd700,#ff9800);
+color:#000;
+}
+
+/* SECTION */
+section{
+padding:90px 20px;
+}
+
+.section-title{
+text-align:center;
+font-size:38px;
+margin-bottom:40px;
+}
+
+/* IMPACT */
+.impact-grid{
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.impact-card{
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(15px);
+padding:25px;
+border-radius:18px;
+text-align:center;
+}
+
+.impact-card h3{
+font-size:34px;
+color:#00ffb3;
+margin-bottom:10px;
+}
+
+/* MISSIONS */
+.mission-wrap{
+max-width:1200px;
+margin:auto;
+}
+
+.top-row{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.bottom-row{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+margin-top:20px;
+max-width:800px;
+margin-left:auto;
+margin-right:auto;
+}
+
+.card{
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(15px);
+border:1px solid rgba(255,255,255,.12);
+padding:30px;
+border-radius:20px;
+text-align:center;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+border-color:#00ffb3;
+}
+
+.sanskrit-title{
+font-size:42px;
+font-weight:800;
+white-space:nowrap;
+color:#00ffb3;
+}
+
+.english-title{
+font-size:20px;
+margin-top:8px;
+font-weight:700;
+}
+
+.tagline{
+margin-top:10px;
+font-size:15px;
+line-height:1.8;
+}
+
+/* MOBILE */
+@media(max-width:900px){
+
+.top-row{
+grid-template-columns:1fr;
+}
+
+.bottom-row{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:36px;
+}
+
+.hero .sanskrit{
+font-size:26px;
+}
+
+.sanskrit-title{
+font-size:30px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="bg-slider"></div>
+
+<header>
+<nav>
+<a href="#home">Home</a>
+<a href="#impact">Impact</a>
+<a href="#mission">Mission</a>
+</nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+<h1>URJAM FOUNDATION</h1>
+
+<div class="sanskrit">
+वसुधैव कुटुम्बकम्
+</div>
+
+<p>
+One Earth • One Family • One Future
+</p>
+
+<a href="#mission" class="hero-btn">
+Explore Mission
+</a>
+
+</section>
+
+<!-- IMPACT -->
+<section id="impact">
+
+<h2 class="section-title">
+Global Impact
+</h2>
+
+<div class="impact-grid">
+
+<div class="impact-card">
+<h3>50K+</h3>
+<p>Trees Planted</p>
+</div>
+
+<div class="impact-card">
+<h3>10MW+</h3>
+<p>Energy Awareness</p>
+</div>
+
+<div class="impact-card">
+<h3>5000+</h3>
+<p>Students Impacted</p>
+</div>
+
+<div class="impact-card">
+<h3>100+</h3>
+<p>Communities Reached</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- MISSIONS -->
+<section id="mission">
+
+<h2 class="section-title">
+Core Missions
+</h2>
+
+<div class="mission-wrap">
+
+<div class="top-row">
+
+<div class="card">
+<div class="sanskrit-title">ऊर्जम्</div>
+<div class="english-title">URJAM</div>
+<div class="tagline">
+Renewable Energy • Sustainable Future
+</div>
+</div>
+
+<div class="card">
+<div class="sanskrit-title">हरितम्</div>
+<div class="english-title">HARITAM</div>
+<div class="tagline">
+Green Today • Green Tomorrow
+</div>
+</div>
+
+<div class="card">
+<div class="sanskrit-title">वसुन्धरा</div>
+<div class="english-title">VASUNDHARA</div>
+<div class="tagline">
+One Earth • One Family • One Future
+</div>
+</div>
+
+</div>
+
+<div class="bottom-row">
+
+<div class="card">
+<div class="sanskrit-title">सूर्यम्</div>
+<div class="english-title">SURYAM</div>
+<div class="tagline">
+Solar Energy • Clean Energy • Bright Future
+</div>
+</div>
+
+<div class="card">
+<div class="sanskrit-title">अंकुर</div>
+<div class="english-title">ANKUR</div>
+<div class="tagline">
+Plant Today • Sustain Tomorrow
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<script>
+
+const slides=[
+"https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg",
+"https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg",
+"https://images.pexels.com/photos/34950/pexels-photo.jpg",
+"https://images.pexels.com/photos/256381/pexels-photo-256381.jpeg",
+"https://images.pexels.com/photos/235615/pexels-photo-235615.jpeg"
+];
+
+let i=0;
+
+const bg=document.querySelector(".bg-slider");
+
+function changeBg(){
+bg.style.backgroundImage=`url('${slides[i]}')`;
+i=(i+1)%slides.length;
+}
+
+changeBg();
+setInterval(changeBg,3000);
+
+</script>
