@@ -382,3 +382,286 @@ changeBg();
 setInterval(changeBg,3000);
 
 </script>
+<!-- GLOBAL VISION -->
+<section id="vision">
+
+<h2 class="section-title">
+Global Vision
+</h2>
+
+<div class="card" style="max-width:1000px;margin:auto;">
+
+<div style="
+font-size:42px;
+font-weight:800;
+color:#00ffb3;
+margin-bottom:15px;
+text-align:center;">
+वसुधैव कुटुम्बकम्
+</div>
+
+<div style="
+font-size:22px;
+text-align:center;
+margin-bottom:15px;">
+The World Is One Family
+</div>
+
+<p style="
+text-align:center;
+line-height:2;
+font-size:17px;">
+URJAM Foundation is committed to Renewable Energy,
+Environmental Protection, Education, Climate Action,
+Rural Development and Sustainable Growth for future generations.
+</p>
+
+</div>
+
+</section>
+
+<!-- INVESTOR -->
+<section id="investor">
+
+<h2 class="section-title">
+Investor & CSR Partnership
+</h2>
+
+<div class="card" style="max-width:1000px;margin:auto;">
+
+<h3 style="color:#00ffb3;margin-bottom:15px;">
+Why Partner With URJAM?
+</h3>
+
+<p style="line-height:2;">
+✔ Renewable Energy Initiatives<br>
+✔ Tree Plantation Programs<br>
+✔ Education & Skill Development<br>
+✔ Climate Action Campaigns<br>
+✔ Rural Transformation Projects<br>
+✔ SDG Aligned Impact Model
+</p>
+
+</div>
+
+</section>
+
+<!-- DONATION -->
+<section id="donate">
+
+<h2 class="section-title">
+Support The Mission
+</h2>
+
+<div class="card" style="max-width:700px;margin:auto;">
+
+<div style="
+font-size:22px;
+margin-bottom:20px;
+text-align:center;">
+Choose Donation Amount
+</div>
+
+<div style="
+display:flex;
+gap:10px;
+justify-content:center;
+flex-wrap:wrap;
+margin-bottom:20px;">
+
+<button onclick="setAmount(100)">₹100</button>
+<button onclick="setAmount(500)">₹500</button>
+<button onclick="setAmount(1000)">₹1000</button>
+<button onclick="setAmount(5000)">₹5000</button>
+
+</div>
+
+<input
+id="donationAmount"
+type="number"
+placeholder="Enter Amount"
+style="
+width:100%;
+padding:14px;
+border:none;
+border-radius:10px;
+margin-bottom:15px;">
+
+<button
+onclick="donateNow()"
+style="
+width:100%;
+padding:14px;
+border:none;
+border-radius:10px;
+background:#00ffb3;
+font-weight:bold;
+cursor:pointer;">
+Donate Now
+</button>
+
+</div>
+
+</section>
+
+<!-- LOGIN -->
+<section id="login">
+
+<h2 class="section-title">
+Join URJAM
+</h2>
+
+<div class="card" style="max-width:700px;margin:auto;">
+
+<input
+id="name"
+type="text"
+placeholder="Full Name"
+style="
+width:100%;
+padding:14px;
+border:none;
+border-radius:10px;
+margin-bottom:12px;">
+
+<input
+id="email"
+type="email"
+placeholder="Email Address"
+style="
+width:100%;
+padding:14px;
+border:none;
+border-radius:10px;
+margin-bottom:12px;">
+
+<input
+id="password"
+type="password"
+placeholder="Password"
+style="
+width:100%;
+padding:14px;
+border:none;
+border-radius:10px;
+margin-bottom:15px;">
+
+<button
+onclick="loginUser()"
+style="
+width:100%;
+padding:14px;
+border:none;
+border-radius:10px;
+background:#00ffb3;
+font-weight:bold;
+cursor:pointer;">
+Login / Register
+</button>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+
+<h2 class="section-title">
+Contact Us
+</h2>
+
+<div class="card" style="max-width:800px;margin:auto;text-align:center;">
+
+<h3 style="margin-bottom:15px;">
+URJAM FOUNDATION
+</h3>
+
+<p style="line-height:2;">
+📞 +91 9179627005<br>
+📧 urjam.foundation@gmail.com<br>
+🌍 India | Global Sustainability Initiative
+</p>
+
+<a
+href="https://wa.me/919179627005"
+target="_blank"
+style="
+display:inline-block;
+margin-top:20px;
+padding:14px 28px;
+background:#25D366;
+color:white;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;">
+WhatsApp Contact
+</a>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer style="
+text-align:center;
+padding:40px 20px;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);">
+
+<h3 style="margin-bottom:10px;">
+URJAM FOUNDATION
+</h3>
+
+<p>
+Building A Sustainable Future For Humanity
+</p>
+
+<p style="margin-top:10px;font-size:14px;opacity:.8;">
+© 2026 URJAM Foundation | All Rights Reserved
+</p>
+
+</footer>
+
+<script>
+
+/* DONATION */
+
+function setAmount(amount){
+document.getElementById("donationAmount").value=amount;
+}
+
+function donateNow(){
+
+let amount=document.getElementById("donationAmount").value;
+
+if(amount==""){
+alert("Please enter donation amount");
+return;
+}
+
+alert(
+"Thank You For Supporting URJAM Foundation.\nDonation Amount: ₹"+amount
+);
+
+}
+
+/* LOGIN */
+
+function loginUser(){
+
+let name=document.getElementById("name").value;
+let email=document.getElementById("email").value;
+
+if(name=="" || email==""){
+alert("Please fill all details");
+return;
+}
+
+alert("Welcome To URJAM Foundation, "+name);
+
+}
+
+</script>
+
+</body>
+</html>
