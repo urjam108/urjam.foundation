@@ -831,3 +831,169 @@ alert(
 }
 
 </script>
+<!-- SDG GOALS -->
+<section id="sdg">
+
+<h2 class="section-title">
+UN Sustainable Development Goals
+</h2>
+
+<div class="impact-grid">
+
+<div class="impact-card">
+<h3>07</h3>
+<p>Affordable & Clean Energy</p>
+</div>
+
+<div class="impact-card">
+<h3>13</h3>
+<p>Climate Action</p>
+</div>
+
+<div class="impact-card">
+<h3>15</h3>
+<p>Life On Land</p>
+</div>
+
+<div class="impact-card">
+<h3>04</h3>
+<p>Quality Education</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- VOLUNTEER -->
+<section id="volunteer">
+
+<h2 class="section-title">
+Become A Volunteer
+</h2>
+
+<div class="card" style="max-width:700px;margin:auto;">
+
+<input id="volName" type="text"
+placeholder="Full Name"
+style="width:100%;padding:14px;margin-bottom:10px;border:none;border-radius:10px;">
+
+<input id="volEmail" type="email"
+placeholder="Email Address"
+style="width:100%;padding:14px;margin-bottom:10px;border:none;border-radius:10px;">
+
+<input id="volPhone" type="text"
+placeholder="Mobile Number"
+style="width:100%;padding:14px;margin-bottom:15px;border:none;border-radius:10px;">
+
+<button onclick="registerVolunteer()"
+style="
+width:100%;
+padding:14px;
+border:none;
+border-radius:10px;
+background:#00ffb3;
+font-weight:bold;
+cursor:pointer;">
+Join Mission
+</button>
+
+</div>
+
+</section>
+
+<!-- PARTNERS -->
+<section id="partners">
+
+<h2 class="section-title">
+Partners & Supporters
+</h2>
+
+<div class="impact-grid">
+
+<div class="impact-card">
+🌍 Global NGOs
+</div>
+
+<div class="impact-card">
+🏛 CSR Partners
+</div>
+
+<div class="impact-card">
+🎓 Universities
+</div>
+
+<div class="impact-card">
+🔬 Research Institutions
+</div>
+
+</div>
+
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+
+<h2 class="section-title">
+Voices Of Change
+</h2>
+
+<div class="impact-grid">
+
+<div class="impact-card">
+"Great initiative for clean energy and sustainability."
+</div>
+
+<div class="impact-card">
+"URJAM inspires youth to work for climate action."
+</div>
+
+<div class="impact-card">
+"An impactful vision for future generations."
+</div>
+
+</div>
+
+</section>
+
+<!-- FLOATING WHATSAPP -->
+
+<a href="https://wa.me/919179627005"
+target="_blank"
+style="
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25D366;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:30px;
+text-decoration:none;
+color:white;
+box-shadow:0 0 20px rgba(0,0,0,.4);
+z-index:9999;">
+💬
+</a>
+
+<script>
+
+function registerVolunteer(){
+
+let name=document.getElementById("volName").value;
+
+if(name==""){
+alert("Please enter your details");
+return;
+}
+
+alert(
+"Thank You " + name +
+" for joining URJAM Mission!"
+);
+
+}
+
+</script>
