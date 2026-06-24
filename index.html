@@ -322,7 +322,109 @@ Core Missions
 
 <div class="top-row">
 
-<div class="card" onclick="location.href='urjam.html">
+<!-- ================= URJAM POPUP MODAL ================= -->
+<div id="urjamModal" class="custom-modal">
+    <div class="custom-modal-content">
+        <!-- बंद करने का बटन (X) -->
+        <span class="close-modal-btn" onclick="closeUrjamModal()">&times;</span>
+        
+        <div class="modal-body-text">
+            <h2 style="color: #2e7d32; margin-top: 0; font-size: 24px;">🌱 ऊर्जम् Urjam – हमारा उद्देश्य</h2>
+            
+            <!-- हिंदी सेक्शन -->
+            <div style="margin-top: 20px;">
+                <h4 style="color: #1b5e20; margin-bottom: 5px; font-size: 16px;">🇮🇳 हिन्दी (Hindi)</h4>
+                <p style="color: #333; line-height: 1.6; text-align: justify; margin: 0;">
+                    हमारा उद्देश्य पर्यावरण संरक्षण, नवीकरणीय ऊर्जा को बढ़ावा देना, जल एवं प्राकृतिक संसाधनों का संरक्षण करना, वृक्षारोपण एवं हरित विकास को प्रोत्साहित करना, सतत कृषि पद्धतियों को बढ़ावा देना, शिक्षा एवं कौशल विकास के अवसर उपलब्ध कराना तथा सामाजिक कल्याण के माध्यम से एक आत्मनिर्भर, समृद्ध और सतत समाज का निर्माण करना है। हम समुदायों को जागरूक, सशक्त और सहभागी बनाकर वर्तमान एवं आने वाली पीढ़ियों के लिए एक स्वच्छ, हरित और सुरक्षित भविष्य के निर्माण हेतु कार्य करते हैं।
+                </p>
+            </div>
+            
+            <hr style="border: 0; border-top: 1px solid #c8e6c9; margin: 20px 0;">
+            
+            <!-- इंग्लिश सेक्शन -->
+            <div>
+                <h4 style="color: #1b5e20; margin-bottom: 5px; font-size: 16px;">🇬🇧 English</h4>
+                <p style="color: #333; line-height: 1.6; text-align: justify; margin: 0;">
+                    Our mission is to promote environmental conservation, renewable energy adoption, water and natural resource protection, tree plantation and green development, sustainable agricultural practices, education and skill development opportunities, and social welfare initiatives to build a self-reliant, prosperous, and sustainable society. We work to create awareness, empower communities, and encourage active participation in building a cleaner, greener, and safer future for present and future generations.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- पॉपअप को सुंदर बनाने के लिए CSS -->
+<style>
+    /* बैकग्राउंड जो पीछे की स्क्रीन को धुंधला/काला करेगा */
+    .custom-modal {
+        display: none; /* शुरुआत में छुपा रहेगा */
+        position: fixed;
+        z-index: 9999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6); /* ब्लैक ट्रांसपेरेंट बैकग्राउंड */
+        backdrop-filter: blur(5px); /* पीछे का बैकग्राउंड धुंधला करने के लिए */
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* पॉपअप बॉक्स का स्टाइल */
+    .custom-modal-content {
+        background-color: #ffffff;
+        margin: auto;
+        padding: 30px;
+        border-radius: 12px;
+        width: 90%;
+        max-width: 650px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        position: relative;
+        animation: fadeIn 0.3s ease-out;
+        font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    /* क्लोज बटन (X) का स्टाइल */
+    .close-modal-btn {
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        color: #aaa;
+        font-size: 35px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: color 0.2s;
+    }
+
+    .close-modal-btn:hover {
+        color: #d32f2f;
+    }
+
+    /* धीरे से खुलने वाला एनीमेशन */
+    @keyframes fadeIn {
+        from { transform: scale(0.9); opacity: 0; }
+        to { transform: scale(1); opacity: 1; }
+    }
+</style>
+
+<!-- क्लिक करने पर ओपन और क्लोज करने की JavaScript -->
+<script>
+    function openUrjamModal() {
+        document.getElementById("urjamModal").style.display = "flex";
+    }
+
+    function closeUrjamModal() {
+        document.getElementById("urjamModal").style.display = "none";
+    }
+
+    // अगर यूजर पॉपअप बॉक्स के बाहर कहीं भी क्लिक करे, तो भी बंद हो जाए
+    window.onclick = function(event) {
+        var modal = document.getElementById("urjamModal");
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
 <div class="sanskrit-title">ऊर्जम्</div>
 <div class="english-title">URJAM</div>
 <div class="tagline">
