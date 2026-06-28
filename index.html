@@ -448,6 +448,13 @@ One Earth • One Family • One Future
 </div>
 </div>
   
+// अगर यूजर पॉपअप बॉक्स के बाहर कहीं भी क्लिक करे, तो भी बंद हो जाए
+    window.onclick = function(event) {
+        var modal = document.getElementById("urjamModal");
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }  
 <div class="card" onclick="location.href='suryam.html">
 <div class="sanskrit-title">सूर्यम्</div>
 <div class="english-title">SURYAM</div>
